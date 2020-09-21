@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_CTYPE, "Russian");
+	int a, S, S1, S2, S3;
+	cout << "Введите a ";
+	cin >> a;
+	S = a % 10;
+	S1 = a / 1000;
+	S2 = a % 100 / 10;
+	S3 = a / 100 % 10;
+	cout << "Сумма элементов равна " <<S+S1+S2+S3 << endl;
+}
