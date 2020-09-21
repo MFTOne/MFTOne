@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_CTYPE, "Russian");
+	double x = 6.55, y = -2.78, z, b;
+	z = sqrt(x) * atan(2 * y) / exp(y + x);
+	cout << "z=" << z << endl;
+	b = z * z / y + pow(x, 3) + sin(y / 5);
+	cout << "b=" << b << endl;
+	}
